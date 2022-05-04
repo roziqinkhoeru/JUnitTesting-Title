@@ -1,6 +1,7 @@
 package junit5.informatics6;
 
-public class TemperatureConverter {
+public class CelciusConverter {
+	
 	// celcius to reamur
 	public double celciusToReamur(double c) {
 		return 4 * c / 5;
