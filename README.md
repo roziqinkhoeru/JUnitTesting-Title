@@ -1,2 +1,2 @@
-# JUnitTesting-Title
-JUnit Testing - Title
+# JUnit Testing Temperature Converter Program
+With Eclipse IDE
