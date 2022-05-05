@@ -19,7 +19,7 @@ class CelciusConverterTest {
 
 	@BeforeAll
 	static void beforeAllInit() {
-		System.out.println("Run Test Program\n");
+		System.out.println("===== Run Test Program =====\n");
 	}
 	
 	@BeforeEach
@@ -43,6 +43,28 @@ class CelciusConverterTest {
 		double expected = 8.0;
 		double actual = c_convert.celciusToReamur(10);
 
+		assertEquals(expected, actual, () -> "Should return convert " + expected + " but returned " + actual);
+	}
+	
+	// tester 2
+	@Test
+	@DisplayName("Fahrenheit Testing")
+	@Tag("Fahrenheit")
+	void fahrenheitTest() {
+		double expected = 50;
+		double actual = c_convert.celciusToFahrenheit(10);
+		
+		assertEquals(expected, actual, () -> "Should return convert " + expected + " but returned " + actual);
+	}
+	
+	// tester 3
+	@Test
+	@DisplayName("Kelvin Testing")
+	@Tag("Kelvin")
+	void kelvinTest() {
+		double expected = 283.15;
+		double actual = c_convert.celciusToKelvin(10);
+		
 		assertEquals(expected, actual, () -> "Should return convert " + expected + " but returned " + actual);
 	}
 

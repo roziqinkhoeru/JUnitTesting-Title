@@ -20,7 +20,7 @@ class FahrenheitConverterTest {
 
 	@BeforeAll
 	static void beforeAllInit() {
-		System.out.println("Run Test Program\n");
+		System.out.println("===== Run Test Program =====\n");
 	}
 	
 	@BeforeEach
@@ -38,28 +38,28 @@ class FahrenheitConverterTest {
 	
 	// nested tester
 	@Nested
-	@DisplayName("Test Pocket")
-	@Tag("ClassTemperature")
+	@DisplayName("Fahrenheit Test Pocket")
+	@Tag("ClassTest")
 	class ClassTempTest {
 		@Test
 		@DisplayName("Reamur Testing")
 		@Tag("Reamur")
 		void reamurTest() {
-			assertEquals(80.0, f_convert.fahrenheitToCelcius(100));
+			assertEquals(37.78, f_convert.fahrenheitToCelcius(100));
 		}
 
 		@Test
 		@DisplayName("Fahrenheit Testing")
 		@Tag("Fahrenheit")
 		void fahrenheitTest() {
-			assertEquals(212.0, f_convert.fahrenheitToReamur(100));
+			assertEquals(34, f_convert.fahrenheitToReamur(100));
 		}
 
 		@Test
 		@DisplayName("Kelvin Testing")
 		@Tag("Kelvin")
 		void kelvinTest() {
-			assertEquals(373.15, f_convert.fahrenheitToKelvin(100));
+			assertEquals(559.67, f_convert.fahrenheitToKelvin(100));
 		}
 	}
 	
@@ -67,8 +67,8 @@ class FahrenheitConverterTest {
 	@DisplayName("Assert All Temperature")
 	void testMultiply() {
 		assertAll(
-				() -> assertEquals(0.8, f_convert.fahrenheitToCelcius(1)),
-				() -> assertEquals(33.8, f_convert.fahrenheitToReamur(1)),
-				() -> assertEquals(274.15, f_convert.fahrenheitToKelvin(1)));
+				() -> assertEquals(37.78, f_convert.fahrenheitToCelcius(100)),
+				() -> assertEquals(34, f_convert.fahrenheitToReamur(100)),
+				() -> assertEquals(559.67, f_convert.fahrenheitToKelvin(100)));
 	}
 }
