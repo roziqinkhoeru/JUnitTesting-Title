@@ -42,21 +42,21 @@ class FahrenheitConverterTest {
 	@Tag("ClassTest")
 	class ClassTempTest {
 		@Test
-		@DisplayName("Reamur Testing")
+		@DisplayName("Fahrenheit to Reamur Testing")
 		@Tag("Reamur")
 		void reamurTest() {
 			assertEquals(37.78, f_convert.fahrenheitToCelcius(100));
 		}
 
 		@Test
-		@DisplayName("Fahrenheit Testing")
+		@DisplayName("Fahrenheit to Fahrenheit Testing")
 		@Tag("Fahrenheit")
 		void fahrenheitTest() {
 			assertEquals(34, f_convert.fahrenheitToReamur(100));
 		}
 
 		@Test
-		@DisplayName("Kelvin Testing")
+		@DisplayName("Fahrenheit to Kelvin Testing")
 		@Tag("Kelvin")
 		void kelvinTest() {
 			assertEquals(559.67, f_convert.fahrenheitToKelvin(100));
@@ -64,7 +64,7 @@ class FahrenheitConverterTest {
 	}
 	
 	@Test
-	@DisplayName("Assert All Temperature")
+	@DisplayName("Assert All Fahrenheit Testing")
 	void testMultiply() {
 		assertAll(
 				() -> assertEquals(37.78, f_convert.fahrenheitToCelcius(100)),

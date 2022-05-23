@@ -37,7 +37,7 @@ class CelciusConverterTest {
 	
 	// tester 1
 	@Test
-	@DisplayName("Reamur Testing")
+	@DisplayName("Celcius to Reamur Testing")
 	@Tag("Reamur")
 	void reamurTest() {
 		double expected = 8.0;
@@ -48,7 +48,7 @@ class CelciusConverterTest {
 	
 	// tester 2
 	@Test
-	@DisplayName("Fahrenheit Testing")
+	@DisplayName("Celcius to Fahrenheit Testing")
 	@Tag("Fahrenheit")
 	void fahrenheitTest() {
 		double expected = 50;
@@ -59,7 +59,7 @@ class CelciusConverterTest {
 	
 	// tester 3
 	@Test
-	@DisplayName("Kelvin Testing")
+	@DisplayName("Celcius to Kelvin Testing")
 	@Tag("Kelvin")
 	void kelvinTest() {
 		double expected = 283.15;
